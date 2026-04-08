@@ -14,7 +14,51 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      scheme_applications: {
+        Row: {
+          aadhaar_last_four: string | null
+          created_at: string
+          district: string
+          email: string | null
+          farmer_name: string
+          id: string
+          land_area_acres: number | null
+          message: string | null
+          phone: string
+          scheme_name: string
+          state: string
+          village: string | null
+        }
+        Insert: {
+          aadhaar_last_four?: string | null
+          created_at?: string
+          district: string
+          email?: string | null
+          farmer_name: string
+          id?: string
+          land_area_acres?: number | null
+          message?: string | null
+          phone: string
+          scheme_name: string
+          state: string
+          village?: string | null
+        }
+        Update: {
+          aadhaar_last_four?: string | null
+          created_at?: string
+          district?: string
+          email?: string | null
+          farmer_name?: string
+          id?: string
+          land_area_acres?: number | null
+          message?: string | null
+          phone?: string
+          scheme_name?: string
+          state?: string
+          village?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
