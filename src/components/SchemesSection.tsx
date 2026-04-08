@@ -101,7 +101,7 @@ const SchemesSection = () => {
         >
           <span className="text-sm font-semibold text-primary uppercase tracking-widest">Government Support</span>
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-foreground mt-2">
-            🇮🇳 Schemes for Indian Farmers
+            Schemes for Indian Farmers
           </h2>
           <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">
             Explore key government schemes designed to support and empower farmers across India. Click <strong>"Apply Now"</strong> to submit your details.
