@@ -81,7 +81,7 @@ const HeroSection = () => {
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
-              href="/dashboard.html"
+              href="/dashboard/"
               className="inline-flex items-center gap-2 rounded-lg bg-card/90 backdrop-blur-sm px-7 py-3.5 text-base font-semibold text-foreground shadow-lg hover:bg-card hover:scale-105 transition-all border border-border"
             >
               <BarChart3 className="h-4 w-4" /> Open Dashboard

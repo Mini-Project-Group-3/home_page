@@ -14,6 +14,131 @@ export type Database = {
   }
   public: {
     Tables: {
+      marketplace_crops: {
+        Row: {
+          created_at: string
+          crop_id: string | null
+          grade: string | null
+          harvest_date: string | null
+          id: string
+          images: Json | null
+          is_organic: boolean | null
+          listing_id: string
+          moisture_pct: number | null
+          name: string
+          negotiable: boolean | null
+          price_per_qtl: number | null
+          quantity_qtl: number | null
+          season: string | null
+          storage_type: string | null
+          variety: string | null
+        }
+        Insert: {
+          created_at?: string
+          crop_id?: string | null
+          grade?: string | null
+          harvest_date?: string | null
+          id?: string
+          images?: Json | null
+          is_organic?: boolean | null
+          listing_id: string
+          moisture_pct?: number | null
+          name: string
+          negotiable?: boolean | null
+          price_per_qtl?: number | null
+          quantity_qtl?: number | null
+          season?: string | null
+          storage_type?: string | null
+          variety?: string | null
+        }
+        Update: {
+          created_at?: string
+          crop_id?: string | null
+          grade?: string | null
+          harvest_date?: string | null
+          id?: string
+          images?: Json | null
+          is_organic?: boolean | null
+          listing_id?: string
+          moisture_pct?: number | null
+          name?: string
+          negotiable?: boolean | null
+          price_per_qtl?: number | null
+          quantity_qtl?: number | null
+          season?: string | null
+          storage_type?: string | null
+          variety?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "marketplace_crops_listing_id_fkey"
+            columns: ["listing_id"]
+            isOneToOne: false
+            referencedRelation: "marketplace_listings"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      marketplace_listings: {
+        Row: {
+          created_at: string
+          district: string | null
+          farmer_id: string | null
+          farmer_name: string
+          govt_notes: string | null
+          id: string
+          language: string | null
+          lat: number | null
+          lng: number | null
+          location_source: string | null
+          nearest_mandi: string | null
+          phone: string
+          pincode: string | null
+          session_id: string | null
+          state: string | null
+          status: string
+          village: string | null
+        }
+        Insert: {
+          created_at?: string
+          district?: string | null
+          farmer_id?: string | null
+          farmer_name: string
+          govt_notes?: string | null
+          id?: string
+          language?: string | null
+          lat?: number | null
+          lng?: number | null
+          location_source?: string | null
+          nearest_mandi?: string | null
+          phone: string
+          pincode?: string | null
+          session_id?: string | null
+          state?: string | null
+          status?: string
+          village?: string | null
+        }
+        Update: {
+          created_at?: string
+          district?: string | null
+          farmer_id?: string | null
+          farmer_name?: string
+          govt_notes?: string | null
+          id?: string
+          language?: string | null
+          lat?: number | null
+          lng?: number | null
+          location_source?: string | null
+          nearest_mandi?: string | null
+          phone?: string
+          pincode?: string | null
+          session_id?: string | null
+          state?: string | null
+          status?: string
+          village?: string | null
+        }
+        Relationships: []
+      }
       scheme_applications: {
         Row: {
           aadhaar_last_four: string | null
