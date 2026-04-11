@@ -115,7 +115,7 @@ const MarketplaceAdmin = () => {
   };
 
   const updateStatus = async (id: string, status: string, notes?: string) => {
-    const updateData: Record<string, string> = { status };
+    const updateData: { status: string; govt_notes?: string } = { status };
     if (notes !== undefined) updateData.govt_notes = notes;
 
     const { error } = await supabase
