@@ -9,6 +9,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { Lock, LogOut, RefreshCw, Search, Eye, CheckCircle, XCircle } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import GoogleTranslate from "@/components/GoogleTranslate";
 
 interface MarketplaceListing {
   id: string;
@@ -201,7 +202,8 @@ const MarketplaceAdmin = () => {
       <div className="max-w-7xl mx-auto space-y-6">
         <div className="flex items-center justify-between">
           <h1 className="text-2xl font-bold text-foreground">🌾 Marketplace Listings</h1>
-          <div className="flex gap-2">
+          <div className="flex gap-2 items-center">
+            <GoogleTranslate />
             <Button variant="outline" size="sm" onClick={fetchListings} disabled={loading}>
               <RefreshCw className={`h-4 w-4 mr-1 ${loading ? "animate-spin" : ""}`} /> Refresh
             </Button>

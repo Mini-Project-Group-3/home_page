@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Sprout, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import GoogleTranslate from "@/components/GoogleTranslate";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -48,6 +49,7 @@ const Navbar = () => {
           >
             Dashboard
           </motion.a>
+          <GoogleTranslate />
         </div>
 
         <button

@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Lock, LogOut, RefreshCw, Search } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import GoogleTranslate from "@/components/GoogleTranslate";
 
 interface Application {
   id: string;
@@ -116,7 +117,8 @@ const Admin = () => {
       <div className="max-w-7xl mx-auto space-y-6">
         <div className="flex items-center justify-between">
           <h1 className="text-2xl font-bold text-foreground">Scheme Applications</h1>
-          <div className="flex gap-2">
+          <div className="flex gap-2 items-center">
+            <GoogleTranslate />
             <Button variant="outline" size="sm" onClick={fetchApplications} disabled={loading}>
               <RefreshCw className={`h-4 w-4 mr-1 ${loading ? "animate-spin" : ""}`} /> Refresh
             </Button>
