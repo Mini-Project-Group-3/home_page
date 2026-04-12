@@ -43,7 +43,7 @@ const Navbar = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.7 }}
-            href="/dashboard/"
+            href="/dashboard/index.html"
             className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-md hover:shadow-lg hover:scale-105 transition-all"
           >
             Dashboard
@@ -78,7 +78,7 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href="/dashboard/"
+              href="/dashboard/index.html"
               className="block w-full text-center rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground"
             >
               Dashboard
